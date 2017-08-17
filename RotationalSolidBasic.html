@@ -50,13 +50,13 @@ var('t', 'y', 'z', 'r')
 
 @interact( layout =[ ['func', 'rotational_axis', 'a', 'b'], ['x_min', 'x_max', 'y_min', 
        'y_max'], ['axis_parallel_to'] ])
-def solid( func = input_box( default = e^x, label = "f(x) = ", width = 20 ), 
-        a = input_box( default = 0, label = "a", width = 5 ),
-        b = input_box( default = 4, label = "b", width = 5 ),
-        x_min = input_box( default = 0, label = "x min", width = 5 ), 
-        x_max = input_box( default = 4, label = "x max", width = 5 ), 
-        y_min = input_box( default = -60, label = "y min", width = 5 ),
-        y_max = input_box( default = 60, label = "y max", width = 5 ),
+def solid( func = input_box( default = e^x, label = "$f(x) = $", width = 20 ), 
+        a = input_box( default = 0, label = "$a$", width = 5 ),
+        b = input_box( default = 4, label = "$b$", width = 5 ),
+        x_min = input_box( default = 0, label = "$x_{min}$", width = 5 ), 
+        x_max = input_box( default = 4, label = "$x_{max}$", width = 5 ), 
+        y_min = input_box( default = -60, label = "$y_{min}$", width = 5 ),
+        y_max = input_box( default = 60, label = "$y_{max}$", width = 5 ),
         rotational_axis = input_box( default = 0, label = "rotate around axis = ", width = 20 ),
         axis_parallel_to = selector(['x', 'y'], label = "parallel axis" ) ):
     
@@ -106,6 +106,6 @@ def solid( func = input_box( default = e^x, label = "f(x) = ", width = 20 ),
 </div>
 
 <hr>
-Last modified on July 13th, 2017.
+Last modified on August 17th, 2017.
 </body>
 </html>
